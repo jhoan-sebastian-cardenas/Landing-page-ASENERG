@@ -1,0 +1,90 @@
+:root {
+  /* ---------- Colores ---------- */
+  --color-primary: #102a43;
+  --color-secondary: #22c55e;
+  --color-secondary-hover: #1fb554;
+  --color-accent: #22d3ee;
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-text: #102a43;
+  --color-text-secondary: #52606d;
+  --color-border: #d9e2ec;
+  --color-danger: #ef4444; /* rojo decorativo del mockup */
+
+  /* Ajustes de accesibilidad */
+  --color-accent-strong: #0e7490; /* cyan legible para texto pequeño */
+  --color-error: #dc2626; /* errores del formulario */
+
+  /* Tintes */
+  --color-accent-soft: rgba(34, 211, 238, 0.08);
+  --color-primary-soft: rgba(16, 42, 67, 0.03);
+
+  /* Gradientes */
+  --gradient-brand: linear-gradient(90deg, #22c55e 25%, #22d3ee 72%);
+  --gradient-logo: linear-gradient(90deg, #22c55e 11%, #286aa9 88%);
+
+  /* ---------- Tipografía ---------- */
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  --fs-2xs: 0.6875rem; /* 11 */
+  --fs-xs: 0.75rem; /* 12 */
+  --fs-sm: 0.8125rem; /* 13 */
+  --fs-md: 0.875rem; /* 14 */
+  --fs-base: 1rem; /* 16 */
+  --fs-lg: 1.125rem; /* 18 */
+  --fs-xl: 1.25rem; /* 20 */
+  --fs-h1: clamp(2.125rem, 1.727rem + 1.7vw, 3rem); /* 34 -> 48 (verificar en móvil) */
+  --fs-h2: clamp(1.75rem, 1.523rem + 0.97vw, 2.25rem); /* 28 -> 36 (verificar en móvil) */
+
+  --lh-tight: 1.15;
+  --lh-heading: 1.2;
+  --lh-snug: 1.4;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.6;
+
+  /* ---------- Espaciado ---------- */
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-12: 0.75rem;
+  --space-16: 1rem;
+  --space-20: 1.25rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --space-40: 2.5rem;
+  --space-48: 3rem;
+  --space-56: 3.5rem;
+  --space-64: 4rem;
+  --space-80: 5rem;
+  --space-100: 6.25rem;
+
+  /* ---------- Layout (valores móvil; se amplían en responsive.css) ---------- */
+  --container-width: 1200px;
+  --container-padding: 20px;
+  --section-padding-y: 56px;
+  --scroll-offset: 96px;
+
+  /* ---------- Bordes y radios ---------- */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* ---------- Sombras ---------- */
+  --shadow-header: 0 8px 12px rgba(16, 42, 67, 0.08);
+  --shadow-card: 0 12px 12px rgba(16, 42, 67, 0.03);
+  --shadow-cta: 0 8px 8px rgba(34, 197, 94, 0.14);
+
+  /* ---------- Movimiento ---------- */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+
+  /* ---------- Capas ---------- */
+  --z-header: 100;
+}

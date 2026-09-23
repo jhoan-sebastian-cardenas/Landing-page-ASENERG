@@ -1,0 +1,16 @@
+/* Mobile: la base (<768px) está en variables.css */
+
+/* Tablet ≥ 768px */
+@media (min-width: 768px) {
+  :root {
+    --container-padding: 32px;
+    --section-padding-y: 80px;
+  }
+}
+
+/* Desktop ≥ 1024px */
+@media (min-width: 1024px) {
+  :root {
+    --section-padding-y: 100px;
+  }
+}
