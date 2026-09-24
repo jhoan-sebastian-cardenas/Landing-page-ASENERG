@@ -10,6 +10,7 @@
   border-bottom: 1px solid var(--color-border);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  opacity: 0.95;
 }
 
 .header__inner {
@@ -54,6 +55,21 @@
 
 .header__toggle:hover {
   background-color: var(--color-primary-soft);
+}
+
+/* Velo bajo la barra: cierra el menú al pulsar fuera. Va fuera del header
+   porque el backdrop-filter de la barra atraparía un position: fixed interno. */
+.header__backdrop {
+  position: fixed;
+  top: 64px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: calc(var(--z-header) - 1);
+  border: 0;
+  padding: 0;
+  background: rgba(16, 42, 67, 0.45);
+  cursor: pointer;
 }
 
 /* Panel de navegación móvil */
@@ -136,6 +152,10 @@
   }
 
   .header__toggle {
+    display: none;
+  }
+
+  .header__backdrop {
     display: none;
   }
 

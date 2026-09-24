@@ -31,6 +31,29 @@ function Header() {
     return () => document.removeEventListener('keydown', handleKeyDown)
   }, [menuOpen])
 
+  // En móvil, el fondo no se desplaza mientras el menú está abierto
+  useEffect(() => {
+    if (!menuOpen) return
+
+    const desktopQuery = window.matchMedia('(min-width: 1024px)')
+    if (desktopQuery.matches) return
+
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+
+    const handleDesktop = (event) => {
+      if (!event.matches) return
+      document.body.style.overflow = previousOverflow
+      setMenuOpen(false)
+    }
+
+    desktopQuery.addEventListener('change', handleDesktop)
+    return () => {
+      document.body.style.overflow = previousOverflow
+      desktopQuery.removeEventListener('change', handleDesktop)
+    }
+  }, [menuOpen])
+
   // Resaltar el enlace de la sección que se está viendo
   useEffect(() => {
     const sections = NAV_LINKS.map(({ id }) => document.getElementById(id)).filter(Boolean)
@@ -51,6 +74,14 @@ function Header() {
 
   return (
     <>
+    {menuOpen && (
+      <button
+        type="button"
+        className="header__backdrop"
+        aria-label="Cerrar menú"
+        onClick={closeMenu}
+      />
+    )}
     <header className="header">
       <div className="header__inner">
         <a href="#inicio" className="header__logo" onClick={closeMenu}>
@@ -83,13 +114,13 @@ function Header() {
             className="btn btn--primary btn--block header__cta-panel"
             onClick={closeMenu}
           >
-            Solicitar consulta
+            Solicitar consulta gratuita
           </a>
         </nav>
 
         <div className="header__actions">
           <a href="#contacto" className="btn btn--outline header__cta">
-            Solicitar consulta
+            Consulta gratuita
           </a>
 
           <button

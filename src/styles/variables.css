@@ -9,12 +9,14 @@
   --color-surface: #ffffff;
   --color-text: #102a43;
   --color-text-secondary: #52606d;
+  --color-text-button: #ffffff;
   --color-border: #d9e2ec;
+  --color-input-border: #bcccdc;
+  --color-placeholder: #829ab1;
   --color-danger: #ef4444; /* rojo decorativo del mockup */
   --color-on-dark-muted: #bcccdc; /* texto secundario sobre fondo oscuro */
   --color-border-on-dark: rgba(255, 255, 255, 0.14);
-  --color-text: #ffffff;
-
+ 
   /* Ajustes de accesibilidad */
   --color-accent-strong: #0e7490; /* cyan legible para texto pequeño */
   --color-error: #dc2626; /* errores del formulario */

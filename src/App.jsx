@@ -18,8 +18,8 @@ function App() {
         <Benefits/>
         <HowItWorks/>
         <ContactForm/>
-        <Footer/>
       </main>
+      <Footer/>
     </>
   )
 }

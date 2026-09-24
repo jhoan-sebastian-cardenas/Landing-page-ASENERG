@@ -37,7 +37,7 @@ function Solution() {
 
         <div className="solution__cta">
           <a href="#contacto" className="btn btn--secondary">
-            Quiero asesoramiento
+            Solicitar consulta gratuita
           </a>
         </div>
       </div>

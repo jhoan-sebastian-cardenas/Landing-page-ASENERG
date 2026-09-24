@@ -71,6 +71,21 @@
   color: var(--color-primary);
 }
 
+.hero-panel__power {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.35em;
+}
+
+.hero-panel__value--proposed {
+  color: var(--color-secondary-strong);
+}
+
+.hero-panel__stat dd.hero-panel__value--alert {
+  color: var(--color-danger);
+}
+
 /* Gráfico */
 .hero-panel__chart {
   display: block;

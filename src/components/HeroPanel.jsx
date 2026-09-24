@@ -23,17 +23,22 @@ function HeroPanel() {
             Optimización de Potencia y Tarifas
           </p>
         </div>
-        <span className="hero-panel__badge">Luz y Agua</span>
+        <span className="hero-panel__badge">Luz y Gas</span>
       </div>
 
       <dl className="hero-panel__stats">
         <div className="hero-panel__stat">
           <dt>Potencia contratada</dt>
-          <dd>9,2 kW - 5.3 KW</dd>
+          <dd className="hero-panel__power">
+            <span>9.2 kW</span>
+            <span aria-hidden="true">→</span>
+            <span className="sr-only">a</span>
+            <span className="hero-panel__value--proposed">5.5 kW</span>
+          </dd>
         </div>
         <div className="hero-panel__stat">
-          <dt>Recargos Detectatos</dt>
-          <dd>320 kWh</dd>
+          <dt>Recargos detectados</dt>
+          <dd className="hero-panel__value--alert">Reactiva activa</dd>
         </div>
       </dl>
 
