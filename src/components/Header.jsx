@@ -3,14 +3,14 @@ import { Menu, X } from 'lucide-react'
 import './Header.css'
 
 const NAV_LINKS = [
-  { id: 'inicio', label: 'Inicio' },
+  { id: 'solucion', label: 'Solución' },
+  { id: 'beneficios', label: 'Beneficios' },
   { id: 'como-funciona', label: 'Cómo funciona' },
-  { id: 'contacto', label: 'Contacto' },
 ]
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
-  const [activeId, setActiveId] = useState('inicio')
+  const [activeId, setActiveId] = useState('')
   const toggleRef = useRef(null)
 
   const closeMenu = () => setMenuOpen(false)
