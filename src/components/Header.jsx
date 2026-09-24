@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import Logo from './Logo'
 import './Header.css'
 
 const NAV_LINKS = [
@@ -53,8 +54,7 @@ function Header() {
     <header className="header">
       <div className="header__inner">
         <a href="#inicio" className="header__logo" onClick={closeMenu}>
-          <span className="header__logo-mark" aria-hidden="true" />
-          <span className="header__logo-text">ASENERG</span>
+          <Logo />
         </a>
 
         <nav

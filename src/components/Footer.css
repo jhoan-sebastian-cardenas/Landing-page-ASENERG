@@ -1,0 +1,93 @@
+.footer {
+  padding-block: var(--space-56) var(--space-32);
+  color: var(--color-on-dark-muted);
+  background-color: var(--color-primary);
+}
+
+/* El anillo de foco oscuro global no se ve sobre fondo oscuro */
+.footer :focus-visible {
+  outline-color: var(--color-accent);
+}
+
+/* Móvil: todo en una columna */
+.footer__top {
+  display: grid;
+  gap: var(--space-40);
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  max-width: 20rem;
+}
+
+.footer__brand a {
+  align-self: flex-start;
+}
+
+.footer__title {
+  margin-bottom: var(--space-8);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-surface);
+}
+
+/* Área táctil cómoda (~40px de alto) */
+.footer__link {
+  display: inline-block;
+  padding-block: var(--space-8);
+  transition: color var(--transition-fast);
+}
+
+.footer__link:hover {
+  color: var(--color-surface);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  margin-top: var(--space-40);
+  padding-top: var(--space-24);
+  border-top: 1px solid var(--color-border-on-dark);
+  font-size: var(--fs-md);
+}
+
+/* Tablet: marca arriba, enlaces en dos columnas */
+@media (min-width: 768px) {
+  .footer__top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+    max-width: none;
+  }
+}
+
+/* Desktop: marca | navegación | legal, y barra inferior en una línea */
+@media (min-width: 1024px) {
+  .footer {
+    padding-top: var(--space-64);
+  }
+
+  .footer__top {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .footer__brand {
+    grid-column: auto;
+    max-width: 20rem;
+  }
+
+  .footer__bottom {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

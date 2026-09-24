@@ -1,0 +1,30 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.logo__mark {
+  width: 10px;
+  height: 24px;
+  border-radius: 2px;
+  background-color: var(--color-accent);
+}
+
+.logo__text {
+  font-size: 1.375rem;
+  font-weight: var(--fw-extrabold);
+  line-height: 1.2;
+  background: var(--gradient-logo);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Versión para fondos oscuros: el azul del degradado no tiene contraste sobre #102A43 */
+.logo--light .logo__text {
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  color: var(--color-surface);
+}
