@@ -1,21 +1,19 @@
 import Header from './components/Header'
-
-const testSection = { minHeight: '100vh', paddingTop: '120px' }
+import Problem from './components/Problem'
 
 function App() {
   return (
     <>
       <Header />
       <main>
-        <section id="inicio" className="container" style={testSection}>
-          <h1>Entiende tu energía. Mejora tus decisiones.</h1>
+        <section
+          id="inicio"
+          className="container"
+          style={{ minHeight: '100vh', paddingTop: '120px' }}
+        >
+          <h1>Hero (pendiente)</h1>
         </section>
-        <section id="como-funciona" className="container" style={testSection}>
-          <h2>Cómo funciona</h2>
-        </section>
-        <section id="contacto" className="container" style={testSection}>
-          <h2>Contacto</h2>
-        </section>
+        <Problem />
       </main>
     </>
   )
