@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Problem from './components/Problem'
+import Solution from './components/Solution'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <h1>Hero (pendiente)</h1>
         </section>
         <Problem />
+        <Solution/>
       </main>
     </>
   )

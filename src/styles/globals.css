@@ -159,6 +159,19 @@ h3 {
   transform: translateY(0);
 }
 
+.btn--secondary {
+  padding: var(--space-16) var(--space-32);
+  font-size: var(--fs-base);
+  color: var(--color-primary);
+  background-color: var(--color-surface);
+  border-color: var(--color-primary);
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
 .btn--outline {
   padding: 0.625rem var(--space-20);
   font-size: var(--fs-md);
@@ -174,6 +187,29 @@ h3 {
 
 .btn--block {
   width: 100%;
+}
+
+/* Encabezado centrado (Solución, Beneficios, Cómo funciona) */
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-16);
+  max-width: 50rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.section-lead {
+  max-width: 40rem;
+  font-size: var(--fs-base);
+  color: var(--color-text-secondary);
+}
+
+@media (min-width: 768px) {
+  .section-lead {
+    font-size: var(--fs-lg);
+  }
 }
 
 /* ---------- Movimiento reducido ---------- */

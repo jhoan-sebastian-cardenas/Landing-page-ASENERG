@@ -1,0 +1,97 @@
+.solution {
+  padding-block: var(--section-padding-y);
+  background: linear-gradient(to top, var(--color-surface) 25%, var(--color-background) 75%);
+}
+
+/* Móvil y tablet: pasos apilados con flechas hacia abajo */
+.solution__steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  max-width: 36rem;
+  margin: var(--space-40) auto 0;
+}
+
+.solution__item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.solution__card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-12);
+  padding: var(--space-24);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.solution__number {
+  font-size: 1.75rem;
+  font-weight: var(--fw-extrabold);
+  line-height: 1;
+  color: var(--color-accent-strong);
+}
+
+.solution__card h3 {
+  font-size: var(--fs-lg);
+}
+
+.solution__card p {
+  font-size: var(--fs-md);
+  line-height: var(--lh-normal);
+  color: var(--color-text-secondary);
+}
+
+.solution__arrow {
+  display: grid;
+  place-items: center;
+  align-self: center;
+  color: var(--color-accent);
+  transform: rotate(90deg);
+}
+
+.solution__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-40);
+}
+
+@media (min-width: 768px) {
+  .solution__steps {
+    margin-top: var(--space-56);
+  }
+
+  .solution__number {
+    font-size: 2rem;
+  }
+
+  .solution__cta {
+    margin-top: var(--space-56);
+  }
+}
+
+/* Desktop: tres columnas iguales con la flecha en el hueco entre tarjetas */
+@media (min-width: 1024px) {
+  .solution__steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--space-56);
+    max-width: none;
+  }
+
+  .solution__item {
+    position: relative;
+    flex-direction: row;
+  }
+
+  .solution__arrow {
+    position: absolute;
+    top: 50%;
+    right: calc(-1 * var(--space-40));
+    transform: translateY(-50%);
+  }
+}
