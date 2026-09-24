@@ -2,6 +2,7 @@ import Header from './components/Header'
 import Problem from './components/Problem'
 import Solution from './components/Solution'
 import Benefits from './components/Benefits'
+import HowItWorks from './components/HowItWorks'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Problem />
         <Solution/>
         <Benefits/>
+        <HowItWorks/>
       </main>
     </>
   )
