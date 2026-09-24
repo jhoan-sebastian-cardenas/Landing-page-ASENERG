@@ -3,6 +3,7 @@ import Problem from './components/Problem'
 import Solution from './components/Solution'
 import Benefits from './components/Benefits'
 import HowItWorks from './components/HowItWorks'
+import ContactForm from './components/ContactForm'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Solution/>
         <Benefits/>
         <HowItWorks/>
+        <ContactForm/>
       </main>
     </>
   )
