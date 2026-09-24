@@ -208,6 +208,10 @@ textarea.form__control {
   color: var(--color-text-secondary);
 }
 
+.contact-icon svg {
+  transition: transform var(--transition-fast);
+}
+
 /* ---------- Tablet ---------- */
 @media (min-width: 768px) {
   .contact__text {

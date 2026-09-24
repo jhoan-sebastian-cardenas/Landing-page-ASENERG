@@ -21,32 +21,6 @@
   padding-inline: var(--container-padding);
 }
 
-/* Logo */
-.header__logo {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-8);
-  flex-shrink: 0;
-}
-
-.header__logo-mark {
-  width: 10px;
-  height: 24px;
-  border-radius: 2px;
-  background-color: var(--color-accent);
-}
-
-.header__logo-text {
-  font-size: 1.375rem;
-  font-weight: var(--fw-extrabold);
-  line-height: 1.2;
-  background: var(--gradient-logo);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-}
-
 /* CTA + botón de menú */
 .header__actions {
   display: flex;

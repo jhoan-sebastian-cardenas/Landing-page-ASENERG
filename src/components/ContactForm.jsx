@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { Check, ChevronDown, Mail, Phone } from 'lucide-react'
+import { Check, ChevronDown, Mail, Phone, ArrowRight } from 'lucide-react'
 import { useContactForm } from '../hooks/useContactForm'
 import './ContactForm.css'
 
@@ -157,10 +157,10 @@ function ContactForm() {
                 )}
               </div>
 
-              <button type="submit" className="btn btn--primary btn--block" disabled={isSubmitting}>
+              <button type="submit" className="btn btn--primary btn--block contact-icon" disabled={isSubmitting}>
                 {isSubmitting ? 'Enviando…' : 'Solicitar consulta gratuita'}
+                <ArrowRight size={20} aria-hidden="true" />
               </button>
-              <p className="form__trust">Sin compromiso.</p>
             </form>
           )}
         </div>

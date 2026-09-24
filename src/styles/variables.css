@@ -3,6 +3,7 @@
   --color-primary: #102a43;
   --color-secondary: #22c55e;
   --color-secondary-hover: #1fb554;
+  --color-secondary-strong: #16a34a; /* verde con contraste ≥3:1 sobre blanco (gráficos y degradado) */
   --color-accent: #22d3ee;
   --color-background: #f8fafc;
   --color-surface: #ffffff;
@@ -12,6 +13,7 @@
   --color-danger: #ef4444; /* rojo decorativo del mockup */
   --color-on-dark-muted: #bcccdc; /* texto secundario sobre fondo oscuro */
   --color-border-on-dark: rgba(255, 255, 255, 0.14);
+  --color-text: #ffffff;
 
   /* Ajustes de accesibilidad */
   --color-accent-strong: #0e7490; /* cyan legible para texto pequeño */
@@ -22,7 +24,7 @@
   --color-primary-soft: rgba(16, 42, 67, 0.03);
 
   /* Gradientes */
-  --gradient-brand: linear-gradient(90deg, #22c55e 25%, #22d3ee 72%);
+  --gradient-brand: linear-gradient(90deg, var(--color-secondary-strong), #0891b2);
   --gradient-logo: linear-gradient(90deg, #22c55e 11%, #286aa9 88%);
 
   /* ---------- Tipografía ---------- */

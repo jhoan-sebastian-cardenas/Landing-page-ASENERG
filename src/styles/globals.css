@@ -145,7 +145,7 @@ h3 {
 .btn--primary {
   padding: var(--space-16) var(--space-32);
   font-size: var(--fs-base);
-  color: var(--color-primary);
+  color: var(--color-text);
   background-color: var(--color-secondary);
   box-shadow: var(--shadow-cta);
 }
