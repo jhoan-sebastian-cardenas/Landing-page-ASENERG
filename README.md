@@ -2,7 +2,9 @@
 
 Landing de una sola página para ASENERG, una empresa ficticia de asesoramiento energético. El objetivo es que una persona o un negocio en España solicite una consulta gratuita para entender mejor su factura de luz y gas.
 
-Prueba técnica para Grupo EMAX.
+**Página publicada:** https://landing-page-asenerg.vercel.app/
+
+**Diseño en Figma:** https://www.figma.com/design/z9v0qThSX1Rgp409H4sGIC/landig-page?node-id=2-78&t=HNxxBtd0HJrW2DJ8-1
 
 ## Tecnología
 
@@ -40,4 +42,4 @@ npm install
 npm run dev
 ```
 
-La vista de producción se genera con `npm run build` y se abre con `npm run preview`. El proyecto está preparado para publicarse en Vercel o Netlify.
+La vista de producción se genera con `npm run build` y se abre con `npm run preview`. La versión publicada está en https://landing-page-asenerg.vercel.app/.
