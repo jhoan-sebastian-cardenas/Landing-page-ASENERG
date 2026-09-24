@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import Problem from './components/Problem'
 import Solution from './components/Solution'
+import Benefits from './components/Benefits'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         </section>
         <Problem />
         <Solution/>
+        <Benefits/>
       </main>
     </>
   )
